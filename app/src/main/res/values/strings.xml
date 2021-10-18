@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Second</string>
-    <string name="sing_up">Have you got an account? Register</string>
+    <string name="forgot">forgot password?</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
 </resources>
