@@ -4,16 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/gradient">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/girl"
+        android:scaleType="fitStart"
+        >
+    </ImageView>
+
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/gradient">
+    </View>
 
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/top_image_foreground"
+        android:src="@drawable/ic_gnome"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        android:paddingTop="45dp">
+        android:paddingTop="45dp"
+        >
     </ImageView>
 
 
@@ -29,7 +48,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Username"
+            android:hint="@string/username"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,7 +65,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
