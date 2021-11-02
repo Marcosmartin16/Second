@@ -10,4 +10,6 @@
     <color name="amarillo_box">#F2CB57</color>
     <color name="rositi">#ED57F2</color>
     <color name="palo">#EBDAD2</color>
+    <color name="gradiente1">#D9CAC5</color>
+    <color name="gradiente2">#A69792</color>
 </resources>

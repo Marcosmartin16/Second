@@ -51,12 +51,15 @@
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/password_icon_foreground">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/password" />
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout

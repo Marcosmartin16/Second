@@ -4,12 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+
+import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
+import android.view.animation.ScaleAnimation;
+import android.view.animation.TranslateAnimation;
 
 
 public class SplashScreen extends AppCompatActivity {
@@ -18,6 +27,13 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        openApp(true);
+
+
+        ImageView gnomo = findViewById(R.id.gnome);
+        Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        gnomo.startAnimation(rotate);
+
 
         ImageView mMovil = findViewById(R.id.movil);
 
@@ -27,10 +43,15 @@ public class SplashScreen extends AppCompatActivity {
                 .into(mMovil);
     }
 
+    public void openApp(boolean locationPermission){
 
-    public void openLogin(View v){
-        Intent intent = new Intent(SplashScreen.this,Login.class);
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashScreen.this,Login.class);
 
-        startActivity(intent);
+                startActivity(intent);
+            }
+        }, 3500);
     }
 }

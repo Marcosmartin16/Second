@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="@color/palo">
+    android:background="@color/palo"
+    >
 
     <ImageView
         android:id="@+id/movil"
@@ -13,22 +14,15 @@
         android:layout_height="match_parent"
         />
 
-    <View
-        android:id="@+id/gnomo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.7"
-        />
-
     <ImageView
+        android:id="@+id/gnome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_gnome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/gnomo"
-        app:layout_constraintTop_toTopOf="@+id/gnomo"
-        android:onClick="openLogin"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
 
