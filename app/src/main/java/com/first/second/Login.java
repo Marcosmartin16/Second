@@ -25,11 +25,11 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         //Glide for loading girl
-        ImageView mGirl = findViewById(R.id.girl);
+        ImageView mGirl = findViewById(R.id.veigar1);
 
         Glide.with(this)
                //.load("https://images.unsplash.com/photo-1634829276578-05c2bde8b0a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
-                .load(R.drawable.girl)
+                .load(R.drawable.veigar1)
                     .transition(DrawableTransitionOptions.withCrossFade(500))
                     //.placeholder(new ColorDrawable(this.getResources().getColor(R.color.amarillo_box)))
 

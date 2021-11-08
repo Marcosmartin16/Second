@@ -15,10 +15,10 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        ImageView mHipman = findViewById(R.id.hipman);
+        ImageView mHipman = findViewById(R.id.veigar2);
 
         Glide.with(this)
-                .load(R.drawable.hipman)
+                .load(R.drawable.veigar2)
                     .transition(DrawableTransitionOptions.withCrossFade(500))
                 .into(mHipman);
     }
