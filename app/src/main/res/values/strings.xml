@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Second</string>
     <string name="forgot">forgot password?</string>
-    <string name="register">Register</string>
-    <string name="login">Login</string>
+    <string name="entrar">Entrar</string>
+    <string name="volver">Volver</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
 </resources>

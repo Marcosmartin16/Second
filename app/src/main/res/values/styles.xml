@@ -5,7 +5,8 @@
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">20dp</item>
-        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textColor">@color/gradiente1</item>
+        <item name="android:backgroundTint">@color/white</item>
         <item name="cornerRadius">4dp</item>
     </style>
 

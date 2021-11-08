@@ -25,7 +25,8 @@
         android:paddingTop="45dp"
         android:src="@drawable/ic_gnome"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2" />
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
@@ -84,7 +85,7 @@
         style="@style/mybutton"
         android:layout_width="0dp"
         android:backgroundTint="@color/button_custom"
-        android:text="@string/register"
+        android:text="@string/entrar"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/email" />
