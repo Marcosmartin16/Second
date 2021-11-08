@@ -28,7 +28,8 @@
         android:paddingTop="45dp"
         android:src="@drawable/ic_gnome"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"/>
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        tools:ignore="MissingConstraints" />
 
 
     <com.google.android.material.textfield.TextInputLayout

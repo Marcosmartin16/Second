@@ -20,7 +20,10 @@ import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 
-
+/**
+ * Comentario
+ * @author Sergio Tomeo Samuel
+ */
 public class SplashScreen extends AppCompatActivity {
 
     @Override
