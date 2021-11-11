@@ -27,10 +27,17 @@
     <rotate
         android:duration="500"
         android:startOffset="1500"
-        android:fillAfter="true"
         android:fromDegrees="0"
         android:pivotX="50%"
         android:pivotY="50%"
         android:toDegrees="-30"/>
+
+    <rotate
+        android:duration="500"
+        android:startOffset="1500"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="15"/>
 
 </set>

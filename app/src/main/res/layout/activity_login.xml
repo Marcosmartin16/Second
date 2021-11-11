@@ -23,10 +23,20 @@
 
 
     <ImageView
+        android:id="@+id/gnome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="45dp"
         android:src="@drawable/ic_gnome"
+        app:layout_constraintEnd_toStartOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"/>
+
+    <ImageView
+        android:id="@+id/fireball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="45dp"
+        android:src="@drawable/ic_fireball_svgrepo_com___copia"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"/>
 

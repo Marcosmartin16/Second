@@ -34,7 +34,6 @@ public class SplashScreen extends AppCompatActivity {
         Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
         gnomo.startAnimation(rotate);
 
-
         ImageView mMovil = findViewById(R.id.movil);
 
         Glide.with(this)

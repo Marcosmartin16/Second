@@ -27,6 +27,14 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
+        ImageView gnomo = findViewById(R.id.gnome);
+        Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        gnomo.startAnimation(rotate);
+
+        ImageView fireball = findViewById(R.id.fireball);
+        Animation translate = AnimationUtils.loadAnimation(this, R.anim.translation);
+        fireball.startAnimation(translate);
+
         //Glide for loading girl
         ImageView mGirl = findViewById(R.id.girl);
 
