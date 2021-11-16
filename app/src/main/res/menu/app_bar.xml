@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_svgrepo_com"
+        app:showAsAction="always"
+        android:title="search"/>
+
+
+    <item
+        android:id="@+id/heart"
+        android:icon="@drawable/ic_heart_svgrepo_com"
+        app:showAsAction="always"
+        android:title="fav"/>
+
+    <item
+        android:id="@+id/item1"
+        app:showAsAction="ifRoom"
+        android:title="this1"/>
+
+    <item
+        android:id="@+id/item2"
+        app:showAsAction="ifRoom"
+        android:title="this2"
+       />
+    android:onClick="openRegister"
+
+</menu>

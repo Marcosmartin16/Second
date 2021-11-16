@@ -14,7 +14,8 @@
         <activity
             android:name=".Register"
             android:exported="true"
-            android:parentActivityName=".Login"/>
+            android:parentActivityName=".Login"
+            android:theme="@style/Theme.Second"/>
 
         <activity
             android:name=".SplashScreen"
@@ -29,7 +30,8 @@
 
         <activity
             android:name=".Main"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.Second"/>
 
         <activity
             android:name=".Login"
