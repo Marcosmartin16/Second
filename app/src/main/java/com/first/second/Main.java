@@ -3,6 +3,7 @@ package com.first.second;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,14 +21,36 @@ import java.lang.invoke.ConstantCallSite;
 
 public class Main extends AppCompatActivity {
 
+    private WebView mivisorweb;
+    private SwipeRefreshLayout swipeLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView mycontext = (TextView) findViewById(R.id.textTap);
-        registerForContextMenu(mycontext);
+
+
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+        mivisorweb = (WebView) findViewById(R.id.visitaweb);
+        mivisorweb.getSettings().setBuiltInZoomControls(true);
+        mivisorweb.loadUrl("https://www.thisfuckeduphomerdoesnotexist.com/");
     }
+
+    protected SwipeRefreshLayout.OnRefreshListener
+        mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+            Toast toast0 = Toast.makeText(Main.this, "Los sinson", Toast.LENGTH_LONG);
+            toast0.show();
+
+            mivisorweb.reload();
+
+            swipeLayout.setRefreshing(false);
+        }
+    };
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
@@ -38,9 +62,9 @@ public class Main extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.item1:
-//                Toast toast = Toast.makeText(this, "Item copied",
-//                        Toast.LENGTH_LONG);
-//                toast.show();
+                    /*Toast toast = Toast.makeText(this, "Item copied",
+                            Toast.LENGTH_LONG);
+                    toast.show();*/
 
               final  ConstraintLayout mLayout =  findViewById(R.id.myMainConstraint);
 
@@ -75,9 +99,4 @@ public class Main extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.app_bar,menu);
         return true;
     }
-
-    //public void openRegister(View v){
-    //  Intent intent = new Intent(Main.this, Register.class);
-    //        startActivity(intent);
-    //  }
 }
