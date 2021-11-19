@@ -8,6 +8,8 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -43,8 +45,13 @@ public class Main extends AppCompatActivity {
         mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
-            Toast toast0 = Toast.makeText(Main.this, "Los sinson", Toast.LENGTH_LONG);
-            toast0.show();
+            LayoutInflater myInflater = getLayoutInflater();
+            View myLayout = myInflater.inflate(R.layout.toast_custom,null);
+            Toast mytoast = new Toast(getApplicationContext());
+            mytoast.setGravity(Gravity.BOTTOM,0,0);
+            mytoast.setDuration(Toast.LENGTH_SHORT);
+            mytoast.setView(myLayout);
+            mytoast.show();
 
             mivisorweb.reload();
 
@@ -70,7 +77,7 @@ public class Main extends AppCompatActivity {
 
                 Snackbar snackbar = Snackbar
                         .make(mLayout, "aaaaaaaaaaaaaaaaaa", Snackbar.LENGTH_LONG)
-                        .setAction("UNDu", new View.OnClickListener() {
+                        .setAction("UNDU", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 Snackbar snackbar1 = Snackbar.make(mLayout, "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", Snackbar.LENGTH_SHORT);

@@ -26,6 +26,6 @@
         app:showAsAction="ifRoom"
         android:title="this2"
        />
-    android:onClick="openRegister"
+
 
 </menu>
