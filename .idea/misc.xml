@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3768518518518518" />
+        <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/drawable/fireball.xml" value="0.3769230769230769" />
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/drawable/gradient.xml" value="0.3828125" />
+        <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/drawable/ic_fireball.xml" value="0.3768518518518518" />
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/drawable/ic_fireball_svgrepo_com___copia.xml" value="0.20185185185185187" />
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/drawable/ic_gnome.xml" value="0.20185185185185187" />
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/drawable/ic_heart_svgrepo_com.xml" value="0.3828125" />
@@ -18,6 +21,8 @@
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/menu/app_bar.xml" value="0.36666666666666664" />
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/menu/men_context.xml" value="0.36666666666666664" />
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/menu/menu_context.xml" value="0.36666666666666664" />
+        <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/mipmap-anydpi-v26/ic_fireball.xml" value="0.3768518518518518" />
+        <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/mipmap-anydpi-v26/ic_fireball_round.xml" value="0.3768518518518518" />
         <entry key="..\:/Perfiles/am14dam2/Documents/Second2/app/src/main/res/mipmap-anydpi-v26/lossinson.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/am14dam2/AndroidStudioProjects/Second/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
       </map>

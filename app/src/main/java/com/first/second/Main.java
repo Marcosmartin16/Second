@@ -31,7 +31,8 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        WebView mycontext = (WebView) findViewById(R.id.visitaweb);
+        registerForContextMenu(mycontext);
 
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
@@ -66,7 +67,6 @@ public class Main extends AppCompatActivity {
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
         getMenuInflater().inflate(R.menu.menu_context,menu);
     }
 
@@ -78,14 +78,14 @@ public class Main extends AppCompatActivity {
                             Toast.LENGTH_LONG);
                     toast.show();*/
 
-              final  ConstraintLayout mLayout =  findViewById(R.id.myMainConstraint);
+                final ConstraintLayout mLayout =  findViewById(R.id.myMainConstraint);
 
                 Snackbar snackbar = Snackbar
-                        .make(mLayout, "aaaaaaaaaaaaaaaaaa", Snackbar.LENGTH_LONG)
-                        .setAction("UNDU", new View.OnClickListener() {
+                        .make(mLayout, "Item copied", Snackbar.LENGTH_LONG)
+                        .setAction("UNDO", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Snackbar snackbar1 = Snackbar.make(mLayout, "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", Snackbar.LENGTH_SHORT);
+                                Snackbar snackbar1 = Snackbar.make(mLayout, "Item not copied", Snackbar.LENGTH_SHORT);
                                 snackbar1.show();
                             }
                         });
