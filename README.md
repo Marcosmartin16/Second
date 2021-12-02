@@ -11,6 +11,7 @@ En esta Activity podemos ver una imagen cargada con Glide en el SplashScreen.jav
 este tiene una animacion en la carpeta anim y usamos el archivo rotate.xml simulando dar saltos.
 
 ![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/CapturaSplass.PNG)
+
 ![xml rotate](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/rotate.xml)
 ![xml SplashScreen](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_splash_screen.xml)
 ![java SplashScreen](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/java/com/first/second/SplashScreen.java)
@@ -24,6 +25,7 @@ Podemos ver que en esta Activity el logo tiene una animacion adicional. Ahora el
 Ademas tenemos la posibilidad de logearnos insertando el nombre de usuario y contraseña o tambien puedes registrarte pulstando el boton de register. La imagen de fondo esta cargada con Glide como la del SplashScreen.
 
 ![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/CapturaLogin.PNG)
+
 ![xml rotate](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/rotate.xml)
 ![xml translation](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/translation.xml)
 ![xml Login](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_login.xml)
@@ -38,6 +40,7 @@ Esta Activity es mas sencilla que las anteriores solamente aparecen EditText com
 fondo con Glide.
 
 ![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/CapturaRegister.PNG)
+
 ![xml Register](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_register.xml)
 ![java Register](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/java/com/first/second/Register.java)
 
@@ -56,7 +59,11 @@ Si pulsamos en download nos mostrara un toast con el mensaje item download.
 Para terminar tenemos un WebView que nos permite ver una pagina web que cada vez que refresquemos la pagina aparece una nueva foto. Ademas cada vez que refresquemos nos aparece un toast como 
 al pulsar download pero con una imagen.
 
+![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/Main.PNG)
+
+
 ![xml Main](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_main.xml)
+
 
 gif aplicacion entera
 
