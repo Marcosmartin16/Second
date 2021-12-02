@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
     tools:context=".Login">
 
 
@@ -29,7 +28,8 @@
         android:paddingTop="45dp"
         android:src="@drawable/ic_gnome"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"/>
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/fireball"
@@ -38,13 +38,14 @@
         android:paddingTop="45dp"
         android:src="@drawable/ic_fireball"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"/>
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -62,7 +63,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/til1"
@@ -82,6 +83,7 @@
         android:id="@+id/button"
         style="@style/mybutton"
         android:backgroundTint="@color/button_custom"
+        android:layout_height="55dp"
         android:onClick="openMain"
         android:text="@string/login"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -92,6 +94,7 @@
         android:backgroundTint="@color/button_custom2"
         android:text="@string/register"
         android:onClick="openRegister"
+        android:layout_height="55dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintTop_toBottomOf="@id/til2"
         style="@style/my_button2" />

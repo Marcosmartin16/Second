@@ -22,4 +22,6 @@ public class Register extends AppCompatActivity {
                     .transition(DrawableTransitionOptions.withCrossFade(500))
                 .into(mHipman);
     }
+
+
 }

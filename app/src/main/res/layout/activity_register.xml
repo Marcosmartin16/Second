@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Register">
 
-
     <ImageView
         android:id="@+id/hipman"
         android:layout_width="match_parent"
@@ -19,18 +18,10 @@
         android:alpha="0.7"
         android:background="@drawable/gradient" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="45dp"
-        android:src="@drawable/ic_gnome"
-        app:layout_constraintEnd_toStartOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="425dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -45,8 +36,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="275dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -65,8 +56,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-125dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -83,6 +74,7 @@
         android:id="@+id/button"
         style="@style/mybutton"
         android:layout_width="0dp"
+        android:layout_height="55dp"
         android:backgroundTint="@color/button_custom"
         android:text="@string/register"
         app:layout_constraintEnd_toStartOf="@id/guideline3"

@@ -1,10 +1,12 @@
 package com.first.second;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -17,6 +19,7 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.lang.invoke.ConstantCallSite;
@@ -110,5 +113,65 @@ public class Main extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.app_bar,menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.search) {
+            Toast toast = Toast.makeText(this, "Searching", Toast.LENGTH_SHORT);
+            toast.show();
+
+        }
+        if (id == R.id.heart) {
+            Toast toast = Toast.makeText(this, "Fav", Toast.LENGTH_SHORT);
+            toast.show();
+
+        }
+        if (id == R.id.item1) {
+            showAlertDialogButtonClicked(Main.this);
+        }
+        if (id == R.id.item2) {
+            Intent intent = new Intent(Main.this, Register.class);
+
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void showAlertDialogButtonClicked(Main view){
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        /*builder.setTitle("Wait a minute!");
+        builder.setMessage("Who are you?");
+        builder.setIcon(R.drawable.ic_gnome);*/
+
+        builder.setView(getLayoutInflater().inflate(R.layout.toast_custom, null));
+
+        builder.setPositiveButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("A", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

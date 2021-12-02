@@ -26,6 +26,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //ocultar appbar
+        getSupportActionBar().hide();
 
         ImageView gnomo = findViewById(R.id.gnome);
         Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);

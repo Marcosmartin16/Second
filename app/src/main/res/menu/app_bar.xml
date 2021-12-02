@@ -9,22 +9,22 @@
         app:showAsAction="always"
         android:title="search"/>
 
-
     <item
         android:id="@+id/heart"
         android:icon="@drawable/ic_heart_svgrepo_com"
         app:showAsAction="always"
-        android:title="fav"/>
+        android:title="fav"
+        android:iconTint="@color/corazon"/>
 
     <item
         android:id="@+id/item1"
         app:showAsAction="ifRoom"
-        android:title="this1"/>
+        android:title="AlertDialog"/>
 
     <item
         android:id="@+id/item2"
         app:showAsAction="ifRoom"
-        android:title="this2"
+        android:title="goRegister"
        />
 
 
