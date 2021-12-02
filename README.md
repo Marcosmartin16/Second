@@ -12,8 +12,8 @@ este tiene una animacion en la carpeta anim y usamos el archivo rotate.xml simul
 
 ![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/CapturaSplass.PNG)
 
-[xml rotate](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/rotate.xml)
-[xml SplashScreen](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_splash_screen.xml)
+[xml rotate](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/rotate.xml) /
+[xml SplashScreen](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_splash_screen.xml) /
 [java SplashScreen](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/java/com/first/second/SplashScreen.java)
 
 
@@ -26,9 +26,9 @@ Ademas tenemos la posibilidad de logearnos insertando el nombre de usuario y con
 
 ![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/CapturaLogin.PNG)
 
-[xml rotate](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/rotate.xml)
-[xml translation](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/translation.xml)
-[xml Login](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_login.xml)
+[xml rotate](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/rotate.xml) /
+[xml translation](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/anim/translation.xml) /
+[xml Login](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_login.xml) /
 [java Login](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/java/com/first/second/Login.java)
 
 
@@ -41,14 +41,14 @@ fondo con Glide.
 
 ![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/CapturaRegister.PNG)
 
-[xml Register](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_register.xml)
+[xml Register](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_register.xml) /
 [java Register](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/java/com/first/second/Register.java)
 
 ## Main<a name="id4"></a>
 Esta es la Activity a diferencia de la anterior mas compleja contamos con una app bar superior en la que aparece el nombre de la aplicacion a la izquierda y en la derecha un boton de una lupa, de
 un corazon y un menu icon donde podremos ver dos opciones una que nos sacara un AlertDialog y otra que nos llevara a la pantalla de registro.
 
-[xml app_bar](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/menu/app_bar.xml)
+[xml app_bar](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/menu/app_bar.xml) /
 [xml toast_custom](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/toast_custom.xml)
 
 Ademas tenemos un menu context el cual nos muestra la opcion de copy o download. Si pulsamos copy nos mostrara una snackbar con el mensaje 'item copied' y la opcion de 'UNDO'.
