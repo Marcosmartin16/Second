@@ -1,9 +1,9 @@
 # SECOND
 
-1. Splash Screen(#id1)
-2. Login(#id2)
-3. Register(#id3)
-4. Main(#id4)
+1. [Splash Screen](#id1)
+2. [Login](#id2)
+3. [Register](#id3)
+4. [Main](#id4)
 
 ## Splash Screen<a name="id1"></a>
 
