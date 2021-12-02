@@ -10,7 +10,7 @@
 En esta activity podemos ver una imagen cargada con Glide en el SplashScreen.java. Tambien tenemos el logo de la aplicacion que en este caso es un gnomo, 
 este tiene una animacion en la carpeta anim y usamos el archivo rotate.xml simulando dar saltos.
 
-![capturas]()
+![capturas](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/CapturaLogin.PNG)
 
 # Login
 
