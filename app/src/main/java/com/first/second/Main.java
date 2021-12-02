@@ -50,17 +50,17 @@ public class Main extends AppCompatActivity {
         @Override
         public void onRefresh() {
 
-            Toast toast0 = Toast.makeText(Main.this, "Los sinson", Toast.LENGTH_SHORT);
-            toast0.show();
+            /*Toast toast0 = Toast.makeText(Main.this, "Los sinson", Toast.LENGTH_SHORT);
+            toast0.show();*/
 
             //Toast con imagen
-            /*LayoutInflater myInflater = getLayoutInflater();
+            LayoutInflater myInflater = getLayoutInflater();
             View myLayout = myInflater.inflate(R.layout.toast_custom,null);
             Toast mytoast = new Toast(getApplicationContext());
             mytoast.setGravity(Gravity.BOTTOM,0,0);
             mytoast.setDuration(Toast.LENGTH_SHORT);
             mytoast.setView(myLayout);
-            mytoast.show();*/
+            mytoast.show();
 
             mivisorweb.reload();
 
