@@ -16,8 +16,8 @@ este tiene una animacion en la carpeta anim y usamos el archivo rotate.xml simul
 [xml SplashScreen](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_splash_screen.xml) /
 [java SplashScreen](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/java/com/first/second/SplashScreen.java)
 
+![gif Splash](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/Splash.gif)
 
-gif animacion splash
 
 ## Login<a name="id2"></a>
 
@@ -32,7 +32,8 @@ Ademas tenemos la posibilidad de logearnos insertando el nombre de usuario y con
 [java Login](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/java/com/first/second/Login.java)
 
 
-gif animacion login
+![gif Login](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/Login.gif)
+
 
 ## Register<a name="id3"></a>
 
@@ -64,7 +65,8 @@ al pulsar download pero con una imagen.
 [xml Main](https://github.com/Marcosmartin16/Second/blob/materialLogin/app/src/main/res/layout/activity_main.xml)
 
 
-gif aplicacion entera
+![gif full](https://github.com/Marcosmartin16/Second/blob/materialLogin/capturas/full.gif)
+
 
 
 
