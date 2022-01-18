@@ -133,7 +133,7 @@ public class Main extends AppCompatActivity {
             showAlertDialogButtonClicked(Main.this);
         }
         if (id == R.id.item2) {
-            Intent intent = new Intent(Main.this, Register.class);
+            Intent intent = new Intent(Main.this, Bab.class);
 
             startActivity(intent);
         }

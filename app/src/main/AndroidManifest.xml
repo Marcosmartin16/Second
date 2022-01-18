@@ -39,6 +39,11 @@
             android:theme="@style/Theme.Second">
         </activity>
 
+        <activity
+            android:name=".Bab"
+            android:exported="true"
+            android:theme="@style/Theme.Second"/>
+
     </application>
 
 </manifest>
