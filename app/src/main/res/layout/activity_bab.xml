@@ -17,6 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="20dp"
+            app:fabCradleVerticalOffset="7dp"
             app:fabAlignmentMode="center"
             app:menu="@menu/bottom_app_bar_menu"
             app:navigationIcon="@drawable/ic_burger_foreground"/>
