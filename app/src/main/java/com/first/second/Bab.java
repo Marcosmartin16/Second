@@ -1,5 +1,6 @@
 package com.first.second;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,7 +24,10 @@ public class Bab extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Bab.this,"Fab clicked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Bab.this,"Fab clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Bab.this, MainBM.class);
+
+                startActivity(intent);
             }
         });
 

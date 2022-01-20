@@ -25,4 +25,13 @@
     <style name="MyActionBar">
         <item name="background">@color/gradiente2</item>
     </style>
+
+    <style name="Theme.Second.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Second.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Second.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

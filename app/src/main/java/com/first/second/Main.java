@@ -138,6 +138,13 @@ public class Main extends AppCompatActivity {
             startActivity(intent);
         }
 
+        if (id == R.id.item3) {
+            Intent intent = new Intent(Main.this, MainBM.class);
+
+            startActivity(intent);
+        }
+
+
         return super.onOptionsItemSelected(item);
     }
 

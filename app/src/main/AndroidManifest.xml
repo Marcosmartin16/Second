@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.first.second">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo_amazing"
@@ -10,13 +11,16 @@
         android:roundIcon="@mipmap/logo_amazing_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Second">
-
+        <activity
+            android:name=".MainBM"
+            android:exported="true"
+            android:label="@string/title_activity_main_bm"
+            android:theme="@style/Theme.Second.NoActionBar" />
         <activity
             android:name=".Register"
             android:exported="true"
             android:parentActivityName=".Login"
-            android:theme="@style/Theme.Second"/>
-
+            android:theme="@style/Theme.Second" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
@@ -27,23 +31,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Main"
             android:exported="true"
-            android:theme="@style/Theme.Second"/>
-
+            android:theme="@style/Theme.Second" />
         <activity
             android:name=".Login"
             android:exported="true"
-            android:theme="@style/Theme.Second">
-        </activity>
-
+            android:theme="@style/Theme.Second"></activity>
         <activity
             android:name=".Bab"
             android:exported="true"
-            android:theme="@style/Theme.Second"/>
-
+            android:theme="@style/Theme.Second" />
     </application>
 
 </manifest>
